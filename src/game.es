@@ -1,10 +1,10 @@
 import * as board from './board';
 export class Game {
   constructor() {
-    this.board = new board.Board;
+    this._board = new board.Board;
   }
 
   start() {
-    this.board.print();
+    this._board.print();
   }
 }
