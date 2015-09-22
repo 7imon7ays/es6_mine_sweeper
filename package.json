@@ -3,5 +3,9 @@
   "version": "0.0.1",
   "dependencies": {
     "core-js": "*"
+  },
+  "scripts": {
+    "compile": "babel -d lib/ src/",
+    "play": "node lib/main.js"
   }
 }
