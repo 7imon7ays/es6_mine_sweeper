@@ -5,6 +5,7 @@ export class Game {
   }
 
   start() {
+    this._board.layBombsAndIncrementNeighbors();
     this._board.print();
   }
 }
