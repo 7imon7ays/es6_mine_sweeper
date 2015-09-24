@@ -1,7 +1,8 @@
-import * as board from './board';
-export class Game {
+import Board from './Board';
+
+class Game {
   constructor() {
-    this._board = new board.Board;
+    this._board = new Board;
   }
 
   start() {
@@ -9,3 +10,5 @@ export class Game {
     this._board.print();
   }
 }
+
+export default Game;

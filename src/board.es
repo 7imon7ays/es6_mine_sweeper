@@ -1,5 +1,6 @@
 import 'core-js/shim';
-import * as cell from './cell';
+import Cell from './Cell';
+
 
 const GRID_HEIGHT = 8;
 const GRID_WIDTH = 8;
@@ -8,13 +9,14 @@ const UP = 1;
 const CENTER = 0;
 const DOWN = -1;
 
-export class Board {
+
+class Board {
   constructor() {
     this._grid = [];
     for (var i = 0; i < GRID_HEIGHT; i++) {
       let row = [];
       for (var j = 0; j < GRID_WIDTH; j++) {
-        row.push(new cell.Cell(i, j));
+        row.push(new Cell(i, j));
       }
       this._grid.push(row);
     }
@@ -75,3 +77,5 @@ export class Board {
     }
   }
 }
+
+export default Board;

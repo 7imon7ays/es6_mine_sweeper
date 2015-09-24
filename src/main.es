@@ -1,5 +1,4 @@
-import * as board from './board';
-import * as game from './game';
+import Game from './Game';
 
-let newGame = new game.Game;
+let newGame = new Game;
 newGame.start();

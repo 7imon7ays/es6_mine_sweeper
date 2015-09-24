@@ -1,4 +1,4 @@
-export class Cell {
+class Cell {
   constructor(rowIdx, colIdx) {
     this._hidden = true;
     this._bombed = false;
@@ -34,3 +34,5 @@ export class Cell {
     return this.isBombed() ? 'o' : this._numNearbyBombs || 0;
   }
 }
+
+export default Cell;
